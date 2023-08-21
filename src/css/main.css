@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family:"Poppins",Arial, Helvetica, sans-serif;
+}
+
+.input_error{
+    border: 2px solid red;
+    transition: all .2s ease;
+    /*animation: input_error ;
+    */animation: input_error 1s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -webkit-animation: input_error 1s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+@keyframes input_error{
+    0%{
+    transform: scale(1.05);  
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    100%{
+transform: scale(1);
+    }
+}
